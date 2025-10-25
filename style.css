@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./resources/fonts/Norse-Bold.otf') format('woff2'),
+       url('./resources/fonts/Norse-Bold.otf') format('woff'),
+       url('./resources/fonts/Norse-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use it like any other font */
+body {
+  font-family: 'MyFont', sans-serif;
+}
