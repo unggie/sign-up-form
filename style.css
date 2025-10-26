@@ -6,8 +6,121 @@
   font-weight: normal;
   font-style: normal;
 }
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* Use it like any other font */
 body {
-  font-family: 'MyFont', sans-serif;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+/* Logo and picture style */
+.image{
+  width: 32vw;
+  height: 100vh;
+}
+img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo div{
+  position: absolute;
+  left: 0;
+  top: 120px;
+  display: flex;
+  background: #14141495;
+  width: 32vw;
+  justify-content: center;
+}
+.logo img{
+  width: 90px;
+  height: 100px;
+}
+.logo p{
+  color: #fff;
+  font-size: 92px;
+   font-family: 'MyFont', sans-serif;
+}
+
+
+/* Main content */
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  margin: 80px 30px 30px 30px;
+  padding-right: 210px;
+}
+
+.info p,em{
+  font-size: 18px;
+  font-family: "Arial Rounded MT", Arial, Calibri;
+}
+
+/* Form and it's contents */
+.form-container{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 68vw;
+  box-shadow: rgb(202, 200, 200) 2px 1px 10px;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+.outer{
+  display: flex;
+  gap: 75px;
+}
+.inner{
+  display: flex;
+  flex-direction: column;
+}
+label, .form-container p{
+  font-family: Calibri;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-container p{
+  font-size: 26px;
+}
+
+input{
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  width: 300px;
+  height: 30px;
+}
+input:focus, #password:focus, #confirm-password:focus{
+  outline: 1px solid blue;
+  box-shadow: rgb(226, 226, 226) 1px 1px 10px;
+}
+#password, #confirm-password{
+  outline: 1px solid red;
+}
+button{
+  background: #596D48;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 40px;
+  margin: 10px 0 0 30px;
+}
+.account{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+.account a{
+  text-decoration: none;
+  color: #596D48;
 }
